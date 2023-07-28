@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: store-app
+  labels:
+    component: store
+
+spec:
+  containers:
+    - name: store
+      image: azrubael/store
+      ports:
+        - containerPort: 3000
+        
