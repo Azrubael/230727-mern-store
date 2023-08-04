@@ -1,0 +1,9 @@
+kubectl delete -f store-node-port-service.yaml && \
+kubectl delete -f mongodb-cluster-ip-service.yaml && \
+kubectl delete -f store-deployment.yaml && \
+kubectl delete -f products-api-pod.yaml && \
+kubectl delete -f mongodb-pod.yaml && \
+echo ">> Check pods <<" && \
+kubectl get pods && \
+echo ">>> Check services <<<" && \
+kubectl get services
