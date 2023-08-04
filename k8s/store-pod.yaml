@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: store
-      image: azrubael/store
+      image: azrubael/store-app
       ports:
-        - containerPort: 3000
+        - containerPort: 80
         
