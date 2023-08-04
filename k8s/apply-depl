@@ -1,0 +1,7 @@
+kubectl apply -f store-deployment.yaml && \
+kubectl apply -f store-node-port-service.yaml && \
+kubectl apply -f products-api-pod.yaml && \
+kubectl apply -f mongodb-pod.yaml && \
+kubectl apply -f mongodb-cluster-ip-service.yaml && \
+echo ">>> Check services <<<" && \
+kubectl get services
