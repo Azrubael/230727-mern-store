@@ -44,7 +44,7 @@ app.put("/orders/:id", async (req, res) => {
   if (status === "DELIVERED") {
     try {
       const connection = await amqp.connect(
-        "amqp://rabbitmq-cluster-ip-service:5672"
+        `amqp://${process.env.RABBITMQ_HOST}:${process.env.RABBITMQ_PORT}`
       );
       console.log({ connection });
       const channel = await connection.createChannel();
@@ -81,9 +81,9 @@ app.get("/orders", async (req, res) => {
     orders,
   });
 });
-
+// CONNECT TO MONGO
 mongoose.connect(
-  "mongodb://mongodb-cluster-ip-service/products",
+  `mongodb://${process.env.MONGODB_HOST}/products`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
