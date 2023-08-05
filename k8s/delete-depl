@@ -1,9 +1,8 @@
-kubectl delete -f store-node-port-service.yaml && \
-kubectl delete -f mongodb-cluster-ip-service.yaml && \
-kubectl delete -f store-deployment.yaml && \
-kubectl delete -f products-api-pod.yaml && \
-kubectl delete -f mongodb-pod.yaml && \
-echo ">> Check pods <<" && \
-kubectl get pods && \
-echo ">>> Check services <<<" && \
-kubectl get services
+kubectl apply -f store-deployment.yaml && \
+kubectl apply -f store-cluster-ip-service.yaml && \
+kubectl apply -f mongodb-deployment.yaml && \
+kubectl apply -f mongodb-cluster-ip-service.yaml && \
+kubectl apply -f products-api-deployment.yaml && \
+kubectl apply -f products-api-cluster-ip-service.yaml && \
+echo ">> Check <<" && \
+kubectl get all

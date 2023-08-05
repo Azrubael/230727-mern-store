@@ -1,0 +1,15 @@
+total 14
+drwxrwxrwx 1 4096 Aug  5 12:43 ./
+drwxrwxrwx 1 4096 Aug  4 17:21 ../
+-rwxrwxrwx 1  287 Aug  4 16:30 apply-depl*
+-rwxrwxrwx 1  343 Aug  4 17:14 delete-depl*
+-rwxrwxrwx 1    0 Aug  5 12:43 dir.txt*
+-rwxrwxrwx 1  201 Jul  5  2022 mongodb-cluster-ip-service.yaml*
+-rwxrwxrwx 1  329 Jul  5  2022 mongodb-deployment.yaml*
+-rwxrwxrwx 1  392 Jul  5  2022 notifications-api-deployment.yaml*
+-rwxrwxrwx 1  192 Jul  5  2022 products-api-cluster-ip-service.yaml*
+-rwxrwxrwx 1  607 Jul  5  2022 products-api-deployment.yaml*
+-rwxrwxrwx 1  207 Jul  5  2022 rabbitmq-cluster-ip-service.yaml*
+-rwxrwxrwx 1  337 Jul  5  2022 rabbitmq-deployment.yaml*
+-rwxrwxrwx 1  173 Jul  5  2022 store-cluster-ip-service.yaml*
+-rwxrwxrwx 1  387 Jul  5  2022 store-deployment.yaml*
