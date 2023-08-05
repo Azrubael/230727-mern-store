@@ -1,10 +1,14 @@
 const express = require("express");
 const amqp = require("amqplib");
+import dotenv from "dotenv"
 
 const app = express();
+dotenv.config()
 
-const accountSid = "AC72682e7d8ed1aa74673e68f5ae9e8557";
-const authToken = "765a55f04e8b9e705642e2f1615ac61d";
+const accountSid = process.env.TWILIO_SID;
+const authToken = process.env.TWILIO_TOKEN;
+const fromPhone = process.env.TWILIO_PHONE
+
 const client = require("twilio")(accountSid, authToken);
 
 async function connect() {
@@ -19,7 +23,7 @@ async function connect() {
       client.messages
         .create({
           body: "Your order is out for delivery",
-          from: "+18573714765",
+          from: fromPhone,
           to: message.content.toString(),
         })
         .then((message) => console.log(message.sid))
