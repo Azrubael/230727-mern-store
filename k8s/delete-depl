@@ -1,8 +1,12 @@
-kubectl apply -f store-deployment.yaml && \
-kubectl apply -f store-cluster-ip-service.yaml && \
-kubectl apply -f mongodb-deployment.yaml && \
-kubectl apply -f mongodb-cluster-ip-service.yaml && \
-kubectl apply -f products-api-deployment.yaml && \
-kubectl apply -f products-api-cluster-ip-service.yaml && \
-echo ">> Check <<" && \
+kubectl delete -f store-cluster-ip-service.yaml && \
+kubectl delete -f mongodb-cluster-ip-service.yaml && \
+kubectl delete -f products-api-cluster-ip-service.yaml && \
+kubectl delete -f rabbitmq-cluster-ip-service.yaml
+kubectl delete -f store-deployment.yaml && \
+kubectl delete -f mongodb-deployment.yaml && \
+kubectl delete -f products-api-deployment.yaml && \
+kubectl delete -f rabbitmq-deployment.yaml && \
+kubectl delete -f notifications-api-deployment.yaml && \
+kubectl delete -f rabbitmq-configmap.yaml && \
+echo ">>> Check all <<<" && \
 kubectl get all

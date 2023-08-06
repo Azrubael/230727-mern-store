@@ -7,14 +7,9 @@ The structure:
 Before run you have to install Docker desctop and enable Kubernetes inside it options.
 
 To start application on a localhost:
-    $ ./k8s/apply-depl
+    $ cd k8s
+    $ ./apply-depl
     
 To delete application infrastrucrure on a localhost
-    $ ./k8s/delete-depl
-    
-    
->>> N.B.: The files listed below are left deliberately for convenience. They are not needed for the deployment to work.
-- ./k8s/apply-pods
-- ./k8s/delete-pods
-- ./k8s/obsolete_store-pod.yaml
-- ./k8s/tutor.yaml
+    $ cd k8s
+    $ .delete-depl
