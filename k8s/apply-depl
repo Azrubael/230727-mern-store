@@ -7,6 +7,8 @@ kubectl apply -f notifications-api-deployment.yaml && \
 kubectl apply -f store-cluster-ip-service.yaml && \
 kubectl apply -f mongodb-cluster-ip-service.yaml && \
 kubectl apply -f products-api-cluster-ip-service.yaml && \
-kubectl apply -f rabbitmq-cluster-ip-service.yaml
+kubectl apply -f rabbitmq-cluster-ip-service.yaml && \
+kubectl apply -f ingress-docker-desktop.yaml && \
+kubectl apply -f ingress-service.yaml && \
 echo ">>> Check all <<<" && \
 kubectl get all

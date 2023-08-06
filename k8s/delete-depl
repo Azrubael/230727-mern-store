@@ -8,5 +8,7 @@ kubectl delete -f products-api-deployment.yaml && \
 kubectl delete -f rabbitmq-deployment.yaml && \
 kubectl delete -f notifications-api-deployment.yaml && \
 kubectl delete -f rabbitmq-configmap.yaml && \
+kubectl delete -f ingress-docker-desktop.yaml && \
+kubectl delete -f ingress-service.yaml && \
 echo ">>> Check all <<<" && \
 kubectl get all
