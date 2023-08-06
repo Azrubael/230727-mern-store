@@ -1205,7 +1205,7 @@ webhooks:
         #GENERATED FOR K8S 1.20
         path: /networking/v1/ingresses
     #GENERATED FOR K8S 1.20
-    failurePolicy: Fail
+    failurePolicy: Ignore
     #GENERATED FOR K8S 1.20
     matchPolicy: Equivalent
     #GENERATED FOR K8S 1.20
