@@ -95,8 +95,30 @@ mongoose.connect(
     } else {
       console.log("Connected to MongoDB");
       app.listen(5002, () => {
-        console.log("Now listening on PORT 8000");
+        console.log("Now listening on PORT 5002");
       });
     }
   }
 );
+
+// {
+//   "product": {
+//       "image": "https://www.rebootwithjoe.com/wp-content/uploads/2013/06/Almond-Butter-Chocolate-Fudge.jpg",
+//       "price": 14.33,
+//       "description": "Gooey and creamy chocolate",
+//       "_id": "62c5fee277de00fe92c75f27",
+//       "__v": 0
+//   }
+// }
+// {
+//     "name": "Red Velvet",
+//     "image": "https://media.istockphoto.com/photos/red-velvet-cake-picture-id485832764?k=20&m=485832764&s=612x612&w=0&h=58yxSE0lOx3aD7OZJ3wodakdAbEB-aH6MWNj3QGutwg=",
+//     "description": "Moist with cream cheese icing",
+//     "price": 34.33
+// },
+// {
+//     "name": "Raspberry Cheesecake",
+//     "image": "https://www.elmundoeats.com/wp-content/uploads/2020/06/FP-No-Bake-Raspberry-Cheesecake.jpg",
+//     "description": "New York style cheesecake",
+//     "price": 64.33
+// }

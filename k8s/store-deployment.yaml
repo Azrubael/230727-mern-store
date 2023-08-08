@@ -7,13 +7,13 @@ spec:
   selector:
     matchLabels:
       component: store
-  template:
+  template: # We are defining the pod that the deployment manage
     metadata:
       labels:
         component: store
     spec:
       containers:
         - name: store
-          image: azrubael/store-app
+          image: laithharb/store-app
           ports:
             - containerPort: 80
